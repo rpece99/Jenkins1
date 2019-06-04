@@ -21,9 +21,6 @@ node {
       archiveArtifacts 'in28minutes-web-servlet-jsp/target/*.war'
    }
 }
-stage('Deployment'){
-    sh 'scp /root/.jenkins/workspace/scripted-pipeline/in28minutes-web-servlet-jsp/target/*.war root@172.31.24.196/opt/apache-tomcat-7.0.94/webapps'
-}
-}
+
 
     
